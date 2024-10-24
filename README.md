@@ -2,5 +2,5 @@
 
 ## Protótipo de um sistema para uma oficina de motos
 
-### Técnologias 
+### Tecnologias 
 HTML5, CSS3, Angular, Bootstrap
