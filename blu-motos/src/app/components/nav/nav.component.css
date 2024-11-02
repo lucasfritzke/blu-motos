@@ -1,0 +1,83 @@
+/* Navbar container */
+.navbar {
+  background-color: #343a40;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between; /* Espaça logo e menu */
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Container flexível */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Espaça logo e menu */
+  align-items: center;
+}
+
+/* Menu links */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Ajuste o espaçamento entre os links */
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #343a40;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size: 16px;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #dc3545;
+}

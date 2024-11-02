@@ -1,0 +1,55 @@
+/* Estilo do footer */
+.footer {
+  background-color: #343a40; /* Cor de fundo do footer */
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  width: 100%;
+  position: relative; /* Garante que o footer fique no final da página */
+}
+
+/* Container do footer */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo do footer */
+.footer-logo img {
+  height: 60px;
+}
+
+/* Conteúdo do footer */
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Links de redes sociais */
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+
+.footer-links img {
+  width: 30px;
+  height: 30px;
+}

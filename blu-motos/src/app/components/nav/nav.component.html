@@ -1,1 +1,28 @@
-<p>nav works!</p>
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <ul class="menu">
+        <li><a href="#">Início</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Clientes</a>
+          <div class="dropdown-content">
+            <a  routerLink="/cadastrarClientes" routerLinkActive="router-link-active">Cadastrar</a>
+            <a href="#">Consultar</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Serviços</a>
+          <div class="dropdown-content">
+            <a href="#">Novo</a>
+            <a href="#">Consultar</a>
+          </div>
+        </li>
+
+        <li><a href="#">Relatório</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+

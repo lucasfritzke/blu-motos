@@ -1,0 +1,12 @@
+
+/* Estilo para o container principal */
+main {
+  flex: 1; /* Faz o main ocupar o espaço disponível */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 40px 20px;
+}
+
+
+

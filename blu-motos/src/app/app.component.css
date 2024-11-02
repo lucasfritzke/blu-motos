@@ -1,0 +1,18 @@
+/* Configuração global para altura total */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal que engloba todo o conteúdo */
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima igual à altura da janela */
+}
+
+/* O conteúdo principal expande para ocupar o espaço disponível */
+#content {
+  flex: 1; /* Faz o conteúdo crescer e ocupar o espaço disponível */
+}

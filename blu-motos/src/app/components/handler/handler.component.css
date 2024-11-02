@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  justify-content: space-between; /* Alinha os itens com espaço entre eles */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 10px 20px;
+  background-color: #d6ded9; /* Cor de fundo azul */
+  color: white;
+  height: 151px
+}
+
+header .logo {
+  height: 150px; /* Altura da logo */
+}
+
+header .title {
+  font-size: 24px;
+  font-weight: bold;
+}
