@@ -1,1 +1,27 @@
-<p>consultar-cliente works!</p>
+<main>
+  <div class="consulta-container">
+    <h2>Consultar Cliente</h2>
+    <form (ngSubmit)="buscarClientes()">
+      <div class="form-group">
+        <label for="nome">Nome do Cliente</label>
+        <input type="text" id="nome" [(ngModel)]="nome" name="nome" placeholder="Digite o nome do cliente" required>
+      </div>
+      <button type="submit" class="btn-submit">Buscar</button>
+    </form>
+
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+    <div *ngIf="clientes.length > 0" class="resultados">
+      <h3>Resultados:</h3>
+      <ul>
+        <li *ngFor="let cliente of clientes">
+          <p><strong>Nome:</strong> {{ cliente.nome }}</p>
+          <p><strong>CPF:</strong> {{ cliente.cpf }}</p>
+          <p><strong>Nascimento:</strong> {{ cliente.nascimento }}</p>
+          <p><strong>Telefone:</strong> {{ cliente.telefone }}</p>
+          <p><strong>E-mail:</strong> {{ cliente.email }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
