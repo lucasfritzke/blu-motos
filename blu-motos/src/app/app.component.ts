@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { HandlerComponent } from './components/handler/handler.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
@@ -16,7 +16,9 @@ import { InicioComponent } from './components/inicio/inicio.component';
     FooterComponent,
     MainComponent,
     NavComponent,
-    InicioComponent
+    InicioComponent,
+    FormsModule,
+    RouterModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

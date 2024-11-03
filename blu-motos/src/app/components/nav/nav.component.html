@@ -2,27 +2,26 @@
   <nav class="navbar">
     <div class="container">
       <ul class="menu">
-        <li><a href="#">Início</a></li>
+        <li><a routerLink="/inicio" routerLinkActive="router-link-active">Início</a></li>
 
         <li class="dropdown">
-          <a href="#" class="dropbtn">Clientes</a>
+          <a class="dropbtn">Clientes</a>
           <div class="dropdown-content">
-            <a  routerLink="/cadastrarClientes" routerLinkActive="router-link-active">Cadastrar</a>
-            <a href="#">Consultar</a>
+            <a routerLink="/cadastrar-cliente" routerLinkActive="router-link-active">Cadastrar</a>
+            <a routerLink="/consultarClientes" routerLinkActive="router-link-active">Consultar</a>
           </div>
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropbtn">Serviços</a>
+          <a class="dropbtn">Serviços</a>
           <div class="dropdown-content">
-            <a href="#">Novo</a>
-            <a href="#">Consultar</a>
+            <a routerLink="/novoServico" routerLinkActive="router-link-active">Novo</a>
+            <a routerLink="/consultarServicos" routerLinkActive="router-link-active">Consultar</a>
           </div>
         </li>
 
-        <li><a href="#">Relatório</a></li>
+        <li><a routerLink="/relatorio" routerLinkActive="router-link-active">Relatórios</a></li>
       </ul>
     </div>
   </nav>
 </header>
-
