@@ -16,3 +16,14 @@ html, body {
 #content {
   flex: 1; /* Faz o conteúdo crescer e ocupar o espaço disponível */
 }
+
+/* Estilo para o container principal */
+main {
+  flex: 1; /* Faz o main ocupar o espaço disponível */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 40px 20px;
+  min-height: 60%;
+  background-color: aliceblue;
+}

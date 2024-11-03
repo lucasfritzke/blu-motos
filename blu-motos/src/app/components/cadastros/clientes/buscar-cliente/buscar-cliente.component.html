@@ -1,0 +1,36 @@
+<div class="cliente-container">
+  <div class="busca-container">
+    <label for="tipoBusca">Buscar por:</label>
+    <select id="tipoBusca" [(ngModel)]="tipoBusca">
+      <option value="nome">Nome</option>
+      <option value="cpf">CPF</option>
+      <option value="id">ID</option>
+    </select>
+    <input type="text" [(ngModel)]="valorBusca" placeholder="Digite o valor para busca" />
+    <button (click)="buscarCliente()" class="btn-buscar">Buscar</button>
+    <button (click)="novoCliente()" class="btn-novo">Novo</button>
+  </div>
+
+  <div *ngIf="cliente" class="form-container">
+    <label>Nome:</label>
+    <input type="text" [(ngModel)]="cliente.nome" readonly />
+
+    <label>CPF:</label>
+    <input type="text" [(ngModel)]="cliente.cpf" readonly />
+
+    <label>Nascimento:</label>
+    <input type="text" [(ngModel)]="cliente.nascimento" readonly />
+
+    <label>Telefone:</label>
+    <input type="text" [(ngModel)]="cliente.telefone" readonly />
+
+    <label>Email:</label>
+    <input type="text" [(ngModel)]="cliente.email" readonly />
+
+    <button (click)="alterarCliente()" class="btn-alterar">Alterar</button>
+  </div>
+
+  <div *ngIf="!cliente && clienteBuscado" class="cliente-nao-encontrado">
+    <p>Cliente não informado.</p>
+  </div>
+</div>

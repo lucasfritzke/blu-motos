@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { MainComponent } from './components/main/main.component';
-import { ClientesComponent } from './components/cadastros/clientes/clientes.component';
 import { FornecedoresComponent } from './components/cadastros/fornecedores/fornecedores.component';
 import { ProdutosComponent } from './components/cadastros/produtos/produtos.component';
 import path from 'path';
@@ -10,13 +9,14 @@ import { ConsultarOsEmAndamentoComponent } from './components/ordem-servico/cons
 import { ConsultarOsConcluidasComponent } from './components/ordem-servico/consultar-os-concluidas/consultar-os-concluidas.component';
 import { OrcamentosComponent } from './components/orcamentos/orcamentos.component';
 import { RelatorioComponent } from './components/relatorio/relatorio.component';
+import { BuscarClienteComponent } from './components/cadastros/clientes/buscar-cliente/buscar-cliente.component';
 
 
 
 export const routes: Routes = [
 {path: "", redirectTo: 'inicio', pathMatch: "full" },
 {path: 'inicio', component: InicioComponent },
-{path: 'cliente' , component: ClientesComponent},
+{path: 'clientes' , component: BuscarClienteComponent},
 {path: 'fornecedores', component: FornecedoresComponent},
 {path: 'produtos', component: ProdutosComponent},
 {path: 'cadastrar-os', component: CadastrarOsComponent},

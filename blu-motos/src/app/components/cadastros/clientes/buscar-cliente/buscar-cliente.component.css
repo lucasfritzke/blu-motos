@@ -1,0 +1,115 @@
+/* Container principal do componente */
+.cliente-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #e3e6e9;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 1000px;
+  height: 400px;
+}
+
+/* Estilo da área de busca */
+.busca-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  gap: 10px;
+  background-color: #d1d5da;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 50%
+}
+
+/* Label para o dropdown */
+.busca-container label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Dropdown para selecionar tipo de busca */
+.busca-container select {
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-width: 80px;
+}
+
+/* Campo de entrada para o valor da busca */
+.busca-container input[type="text"] {
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Botões de busca e novo */
+.btn-buscar, .btn-novo {
+  padding: 8px 16px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-buscar {
+  background-color: #4CAF50; /* Verde para o botão Buscar */
+}
+
+.btn-novo {
+  background-color: #f44336; /* Vermelho para o botão Novo */
+  margin-left: 10px;
+}
+
+/* Área do formulário para exibir informações do cliente */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Estilos para os campos de entrada do formulário */
+.form-container label {
+  font-weight: bold;
+  color: #555;
+}
+
+.form-container input[type="text"] {
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Botão de Alterar */
+.btn-alterar {
+  padding: 8px 16px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff9800; /* Laranja para o botão Alterar */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Mensagem para cliente não encontrado */
+.cliente-nao-encontrado {
+  color: #d9534f; /* Vermelho para a mensagem de erro */
+  font-weight: bold;
+  text-align: center;
+}
