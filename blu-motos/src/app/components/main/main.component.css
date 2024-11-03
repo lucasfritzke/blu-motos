@@ -6,6 +6,8 @@ main {
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
   padding: 40px 20px;
+  min-height: 70%;
+  background-color: aliceblue;
 }
 
 
