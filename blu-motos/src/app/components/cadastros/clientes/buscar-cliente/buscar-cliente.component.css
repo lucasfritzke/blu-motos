@@ -7,27 +7,28 @@
   background-color: #e3e6e9;
   border-radius: 8px;
   margin: 0 auto;
-  width: 1000px;
-  height: 400px;
+  width: 700px;
+  height: 500px;
+  position: relative; /* Adiciona a posição relativa */
 }
 
-/* Estilo da área de busca */
+
 .busca-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 20px;
   gap: 10px;
   background-color: #d1d5da;
   padding: 10px;
   border-radius: 8px;
-  min-width: 50%
 }
 
 /* Label para o dropdown */
 .busca-container label {
   font-weight: bold;
   color: #333;
+  min-width: 100px;
 }
 
 /* Dropdown para selecionar tipo de busca */
@@ -64,9 +65,19 @@
 }
 
 .btn-novo {
-  background-color: #f44336; /* Vermelho para o botão Novo */
-  margin-left: 10px;
+  background-color: #f44336;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  padding: 8px 16px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
 
 /* Área do formulário para exibir informações do cliente */
 .form-container {
@@ -77,7 +88,22 @@
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  width: 100%;
+}
+
+.informacao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.informacao label {
+  font-weight: bold;
+  color: #555;
+  min-width: 80px; /* Tamanho mínimo para as labels */
+}
+
+.informacao span {
+  margin-left: 10px;
+  flex-grow: 1; /* Expande para ocupar o espaço disponível */
 }
 
 /* Estilos para os campos de entrada do formulário */
@@ -94,8 +120,8 @@
   width: 100%;
 }
 
-/* Botão de Alterar */
 .btn-alterar {
+  margin-top: 20px;
   padding: 8px 16px;
   font-size: 0.9em;
   font-weight: bold;
@@ -104,7 +130,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 10px;
+  align-self: flex-end; /* Alinha o botão à direita */
 }
 
 /* Mensagem para cliente não encontrado */

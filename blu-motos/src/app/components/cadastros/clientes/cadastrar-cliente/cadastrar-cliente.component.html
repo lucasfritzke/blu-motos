@@ -1,1 +1,20 @@
-<p>cadastrar-cliente works!</p>
+<div class="form-container">
+  <h2>Cadastrar Cliente</h2>
+
+  <label>Nome:</label>
+  <input type="text" [(ngModel)]="cliente.nome" required />
+
+  <label>CPF:</label>
+  <input type="text" [(ngModel)]="cliente.cpf" required />
+
+  <label>Data de Nascimento:</label>
+  <input type="date" [(ngModel)]="cliente.datanascimento" required />
+
+  <label>Telefone:</label>
+  <input type="text" [(ngModel)]="cliente.telefone" required />
+
+  <label>Email:</label>
+  <input type="email" [(ngModel)]="cliente.email" required />
+
+  <button (click)="cadastrarCliente()" class="btn-cadastrar">Cadastrar</button>
+</div>

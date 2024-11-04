@@ -6,6 +6,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
 import { NavComponent } from './components/nav/nav.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { CadastrarClienteComponent } from './components/cadastros/clientes/cadastrar-cliente/cadastrar-cliente.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
     NavComponent,
     InicioComponent,
     FormsModule,
+    CadastrarClienteComponent,
     RouterModule
   ],
   templateUrl: './app.component.html',

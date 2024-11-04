@@ -8,29 +8,47 @@
     </select>
     <input type="text" [(ngModel)]="valorBusca" placeholder="Digite o valor para busca" />
     <button (click)="buscarCliente()" class="btn-buscar">Buscar</button>
-    <button (click)="novoCliente()" class="btn-novo">Novo</button>
+
+    <button routerLink="/cadastrar-cliente" class="btn-novo">Novo</button>
+
   </div>
-
   <div *ngIf="cliente" class="form-container">
-    <label>Nome:</label>
-    <input type="text" [(ngModel)]="cliente.nome" readonly />
+    <div class="informacao">
+      <label>Código:</label>
+      <span>{{ cliente.id }}</span>
+    </div>
 
-    <label>CPF:</label>
-    <input type="text" [(ngModel)]="cliente.cpf" readonly />
+    <div class="informacao">
+      <label>Nome:</label>
+      <span>{{ cliente.nome }}</span>
+    </div>
 
-    <label>Nascimento:</label>
-    <input type="text" [(ngModel)]="cliente.nascimento" readonly />
+    <div class="informacao">
+      <label>CPF:</label>
+      <span>{{ cliente.cpf }}</span>
+    </div>
 
-    <label>Telefone:</label>
-    <input type="text" [(ngModel)]="cliente.telefone" readonly />
+    <div class="informacao">
+      <label>Nascimento:</label>
+      <span>{{ cliente.datanascimento }}</span>
+    </div>
 
-    <label>Email:</label>
-    <input type="text" [(ngModel)]="cliente.email" readonly />
+    <div class="informacao">
+      <label>Telefone:</label>
+      <span>{{ cliente.telefone }}</span>
+    </div>
+
+    <div class="informacao">
+      <label>Email:</label>
+      <span>{{ cliente.email }}</span>
+    </div>
 
     <button (click)="alterarCliente()" class="btn-alterar">Alterar</button>
   </div>
 
+
   <div *ngIf="!cliente && clienteBuscado" class="cliente-nao-encontrado">
     <p>Cliente não informado.</p>
   </div>
+
 </div>

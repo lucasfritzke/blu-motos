@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Cliente } from './cliente.model';
 
 @Injectable({
   providedIn: 'root'
@@ -18,10 +19,15 @@ export class ClientesService {
 
   }
 
-  buscarCliente(tipo: string, valor: string): Observable<any> {
+  buscarCliente(tipo: string, valor: string): Observable<Cliente> {
     const url = `${this.API}/buscar?${tipo}=${valor}`;
-    return this.http.get<any>(url);
+    return this.http.get<Cliente>(url);
 }
+
+cadastrarCliente(cliente: Cliente): Observable<Cliente> {
+  return this.http.post<Cliente>(this.API, cliente);
+}
+
 
 
 }
