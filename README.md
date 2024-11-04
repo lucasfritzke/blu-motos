@@ -4,3 +4,7 @@
 
 ### Tecnologias 
 HTML5, CSS3, Typescript e Angular
+
+## Em desenvolvimento
+Parte implementanda foi a de cadastro de cliente
+
